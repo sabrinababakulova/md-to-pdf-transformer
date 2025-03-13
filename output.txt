@@ -1,0 +1,27 @@
+snowball device
+
+used for data migration
+
+use snowball if:
+- limited connectivity
+- limited bandwidth
+- high network cost
+- shared bandwidth (can't maximize the line)
+- connection stability
+AWS Snowball: offline devices to perform data migrations
+(if it takes more than a week to transfer over the network, use snowball device)
+
+<h2>Edge computing</h2>
+process data while it's being created on an edge location
+- a truck on the road, ship on the sea, a mining station underground
+
+these locations may have limited internet and no access to computing power
+we setup a snowball edge device to do edge computing
+- snowball edge compute optimized (dedicated for that use case) & storage optimized
+- run ec2 instances or lambda functions at the edge
+use case: preprocess data, machine learning, transcoding media
+
+
+**snowball into glacier**
+snowball cannot import to glacier directly
+u must use s3 first, in combination with s3 lifecycle policy
